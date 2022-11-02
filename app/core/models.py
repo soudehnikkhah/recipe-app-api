@@ -1,3 +1,14 @@
+
+from django.db import models  # noqa
+"""
+Database models.
+"""
+from django.db import models
+from django.contrib.auth.models import (
+    AbstractBaseUser,
+    BaseUserManager,
+    PermissionsMixin,
+)
 class UserManager(BaseUserManager):
     """Manager for users."""
 
